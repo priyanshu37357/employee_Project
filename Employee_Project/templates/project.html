@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Salary Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label>Department:</label>
+            <select name="department" required>
+                <option value="0">Engineering</option>
+                <option value="5">Sales</option>
+                <option value="1">Finance</option>
+                <option value="2">HR</option>
+                <option value="3">Marketing</option>
+                <option value="4">Product</option>
+            </select>
+
+            <label>Job Title:</label>
+            <select name="job_title" required>
+                <option value="3">Intern</option>
+                <option value="0">Analyst</option>
+                <option value="1">Engineer</option>
+                <option value="4">Manager</option>
+                <option value="2">Executive</option>
+            </select>
+
+            <label>Experience (Years):</label>
+            <input type="number" name="experience" required>
+
+            <label>Education Level:</label>
+            <select name="education" required>
+                <option value="0">Bachelor</option>
+                <option value="1">Master</option>
+                <option value="2">PhD</option>
+            </select>
+
+            <button type="submit">Predict Salary</button>
+        </form>
+
+        {% if salary %}
+        <div class="result">
+            <strong>Predicted Salary: ₹ {{ salary }}</strong>
+        </div>
+        {% endif %}
+    </div>
+
+
+
+</body>
+</html>
