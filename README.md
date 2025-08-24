@@ -2,7 +2,7 @@
 This is my employee salary prediction project 
 
 
-# 🧑‍💼 Employee Salary Prediction Project
+#  Employee Salary Prediction Project
 
 This is a **Machine Learning + Flask web application** that predicts an employee’s salary based on multiple factors such as age, gender, department, job title, years of experience, and education level.  
 
@@ -13,25 +13,25 @@ The project demonstrates the full cycle of:
 
 ---
 
-## 🚀 Features
-- 📊 **Salary Prediction** based on input fields:
+##  Features
+-  **Salary Prediction** based on input fields:
   - Age
   - Gender
   - Department
   - Job Title
   - Experience (years)
   - Education level
-- 🖥️ **Web Pages**:
+-  **Web Pages**:
   - **Home** – Main landing page  
   - **About** – Info about project  
   - **Project** – Salary prediction form  
   - **History** – View previous predictions
-- 🔮 Uses a trained **Random Forest model** (`Employee_model`)  
-- 📝 Keeps a history of predictions during a session  
+-  Uses a trained **Random Forest model** (`Employee_model`)  
+- keeps a history of predictions during a session  
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Python 3**  
 - **Flask** – Web framework  
 - **Pandas, NumPy** – Data preprocessing  
@@ -40,7 +40,7 @@ The project demonstrates the full cycle of:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 employee_Project/
 │── app.py # Flask application
 │── Employee_model # Trained ML model (joblib file)
@@ -84,7 +84,7 @@ cpp
 Copy
 Edit
 http://127.0.0.1:5000/
-📸 Sample Output (Console)
+Sample Output (Console)
 
 Copy
 Edit
@@ -93,10 +93,10 @@ Prediction for model: 33258.45
 Browser shows:
 Predicted Salary: ₹ 33258.45
 
-🤝 Contributing
+ Contributing
 Pull requests are welcome. For significant changes, please open an issue first to discuss.
 
-📝 License
+License
 This project is licensed under the MIT License.
 
 
